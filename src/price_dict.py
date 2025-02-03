@@ -1,5 +1,5 @@
 """
-This file contains the dictionary with all prices for item in the shop.
+This file contains the dictionary with all prices for items in the shop.
 
 The structure of the dictionary is as follows:
 
@@ -8,7 +8,7 @@ The structure of the dictionary is as follows:
 
 Price has two structures:
 1) price per item in £
-2) price per kg (£ per unit, unit) as a double
+2) price per kg (£ per unit, unit) as a tuple
 
 For more information about savings code see "savings_dict.py".
 

@@ -10,6 +10,7 @@ import numpy as np
 import src
 from src.price_dict import prices # get dictionary with prices
 
+# ------ Function to calculate sub-total and get items for shopping basket -----
 def get_items(basket):
     subTotal = 0 # subtotal for sum of item prices without savings
     items = {} # dictionary item number as key and list of occurrences and potential savings code as value
