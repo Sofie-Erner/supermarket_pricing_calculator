@@ -20,7 +20,7 @@ The dictionary included is from the example in the exercise.
 """
 
 prices = {
-    1: [ 0.5, 1 ], # potatoes
-    2: [ 0.7, 2 ], # beans
-    3: [ (1.99, "kg") ] # oranges
+    1: [ 0.5, 1 ],
+    2: [ 0.7, 2 ],
+    3: [ (1.99, "kg") ]
 }
