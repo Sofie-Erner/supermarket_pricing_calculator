@@ -83,4 +83,4 @@ def get_items(basket):
                 # add save_code to dictionary with item number and 1 occurrence
                 sav_items[sav_code] = [[item_number,1]]
 
-    return items, sav_items, subTotal
+    return items, sav_items, round(subTotal,2)
