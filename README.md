@@ -1,10 +1,12 @@
 # Supermarket Basket Pricing Calculator
 
-This project is for a coding exercise which asks to model a supermarket pricing calculator. 
+This project is for a coding exercise which asks to model a supermarket pricing calculator.
 Given a shopping basket it will calculate the total price of the basket including any potential savings.
 
 The basis are that each item in the shop has an item code which the price and any potential sales are connected to.
 The shopping basket is represented using a list where each item bought is represented by its item code.
+For example, the example given in the coding exerise is represented by *[1,1,1,2,2,(3,0.2)]*.
+Here the first 3x *1* are the beans, the 2x *2* are the Cokes, and *(3,0.2)* are the oranges.
 
 Currently there are two types of pricing options: price per item or price per kg.
 There are three types of sales;
