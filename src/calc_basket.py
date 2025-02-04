@@ -6,6 +6,7 @@ Output: total price of basket
 """
 import src
 from src.get_items import get_items # function to get dictionary of items and sub-total
+from src.get_savings import get_savings # function to calculate savings of basket
 
 # ------ Function to calculate price for a shopping basket -----
 def calc_basket(shop_basket):
@@ -17,12 +18,10 @@ def calc_basket(shop_basket):
     # subtotal for sum of item prices without savings
     # items: dictionary item number as key and list of occurrences and potential savings code as value
 
-    # --- Get dictionary of items & Sub-total ---
-    items, subTotal = get_items(shop_basket)
+    """ --- Get dictionary of items & Sub-total --- """
+    items, sav_items, subTotal = get_items(shop_basket)
         
     print(items)
     print(round(subTotal,2))
-
-    # --- Get Savings  ---
 
     return 0
