@@ -7,6 +7,7 @@ sys.path.append("../")
 
 import src
 from src.get_items import get_items
+from src.get_savings import get_savings
 
 class get_items_test(unittest.TestCase):
     """
@@ -39,7 +40,19 @@ class get_items_test(unittest.TestCase):
     """ ----- Test sub-total ----- """
     def test_subTotal(self):
         # --- Test sub-total value
-        self.assertEqual(round(self.subTotal,2), self.subTotal_exp)
+        self.assertEqual(self.subTotal, self.subTotal_exp)
+
+
+class get_savings_test(unittest.TestCase):
+    """
+    get_savings_test class to test the function
+    check against example given in coding exercise plus extra
+    """
+
+    """ ----- Test Savings Values ----- """
+    def test_subTotal(self):
+        # --- Test sub-total value
+        self.assertEqual(get_savings({1: [[1, 3]], 2: [[2, 2]]}),0.9) # Example from coding exercise
 
 if __name__ == "__main__":
     unittest.main()
