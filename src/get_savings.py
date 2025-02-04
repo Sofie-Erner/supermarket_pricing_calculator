@@ -41,12 +41,9 @@ def get_savings(sav_items):
             div_num = math.floor(N/X) # the number of times X divides N
 
             price_list = [ [prices[item[0]][0],item[1]] for item in items ] # list of prices for items
-            temp_prices = [y[0] for y in price_list]
-
-            # find the price of the cheapest items
-            # sorted list with indices in order of smallest price
-            id_sort =  np.argsort(temp_prices)
-            id_sort = [ int(id) for id in id_sort for i in range(0,price_list[id][1])]
+            temp_prices = [y[0] for y in price_list] # list with only prices
+            id_sort =  np.argsort(temp_prices) # sorted list with indices in order of smallest price
+            id_sort = [ int(id) for id in id_sort for i in range(0,price_list[id][1])] # number of indices using number of occurrences
 
             # --- Buy X items from list [...] for price of Y items ---
             if len(sav[1]) == 2:

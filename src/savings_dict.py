@@ -11,6 +11,8 @@ Different sales have different structures for the list:
 - Buy X items from list [...] for price of Y items; [ [...], (X,Y) ]
 - Buy X items from list [...] for £Y; [ [...], (X,Y,"£") ]
 
+Other types of savings can be added as long as the tuples are changed.
+
 The dictionary included is from the example in the exercise.
 1: Beans; buy 3 for 2
 2: Coke; buy 2 for £1

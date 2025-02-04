@@ -5,7 +5,7 @@ import sys
 path = os.path.abspath(os.getcwd()) # path to directory of script
 sys.path.append("../")
 
-import src
+import src # Import functions to test
 from src.get_items import get_items
 from src.get_savings import get_savings
 
@@ -46,7 +46,6 @@ class get_items_test(unittest.TestCase):
 class get_savings_test(unittest.TestCase):
     """
     get_savings_test class to test the function
-    check against example given in coding exercise plus extra
     """
 
     """ ----- Test Savings Values ----- """
