@@ -10,18 +10,21 @@ from src.get_savings import get_savings # function to calculate savings of baske
 
 # ------ Function to calculate price for a shopping basket -----
 def calc_basket(shop_basket):
-    print(shop_basket)
     # --- Variables ---
-    savings = 0 # sum of savings
-    total = 0 # subTotal minus savings, final price of basket
-
     # subtotal for sum of item prices without savings
     # items: dictionary item number as key and list of occurrences and potential savings code as value
+    # savings: sum of savings
+    # Total: subTotal minus savings, final price of basket
 
     """ --- Get dictionary of items & Sub-total --- """
     items, sav_items, subTotal = get_items(shop_basket)
-        
-    print(items)
-    print(round(subTotal,2))
+    print("Sub-total: ",subTotal)
 
+    """ --- Get Savings  --- """
+    savings = get_savings(sav_items)
+    print("Total savings: ",savings)
+
+    """ --- Total price of basket  --- """
+    total = round(subTotal - savings,2)
+    print("Total to Pay: ",total)
     return 0

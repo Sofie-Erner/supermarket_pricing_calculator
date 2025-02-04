@@ -10,7 +10,6 @@ Different sales have different structures for the list:
 - X% discount; [ [...], X% ]
 - Buy X items from list [...] for price of Y items; [ [...], (X,Y) ]
 - Buy X items from list [...] for £Y; [ [...], (X,Y,"£") ]
-- Buy X items from list [...] and get Y items free; [ [...], (X,Y,0) ]
 
 The dictionary included is from the example in the exercise.
 1: Beans; buy 3 for 2
