@@ -22,6 +22,7 @@ Additional way os pricing and sales can be implemented as long as the chosen str
 - Only one type of sale is applied to each item
 - The sales always applies to the cheapest items in the list
 - Final sub-total, savings, and total are rounded to 2 decimal places rather than the contribution from each item
+- Different dictionaries have been implemented for prices and savings as items with different types of pricing can be included in the same offer (for example, the beans prices per item and the oranges priced per kg.)
 
 ## Notes
 
